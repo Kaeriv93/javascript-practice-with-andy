@@ -59,26 +59,47 @@
 // }
 
 
-function fizzBuzz(num){
-    // in this for loop we are starting at 1 and will 
-    //continue until we are less than or equal to num; and we will increment i by 1
-    for(let i = 1; i <= num; i++){
-        //if i is a divividen of 3 and 5 then it will print out fizzbuzz
-        if( i % 3 === 0 && i % 5 === 0){
-            console.log('fizzBuzz')
-        }
-        // if i is divisible by 3 only then it will print out fizz
-        else if(i % 3 === 0){
-            console.log('fizz')
-        // if i is divisible by 5 only then it will print out buzz
-        }else if(i % 5 === 0){
-            console.log('buzz')
-        }
-        // if none of the conditions are met just print out i 
-        else{
-            console.log(i)
-        }
+// function fizzBuzz(num){
+//     // in this for loop we are starting at 1 and will 
+//     //continue until we are less than or equal to num; and we will increment i by 1
+//     for(let i = 1; i <= num; i++){
+//         //if i is a divividen of 3 and 5 then it will print out fizzbuzz
+//         if( i % 3 === 0 && i % 5 === 0){
+//             console.log('fizzBuzz')
+//         }
+//         // if i is divisible by 3 only then it will print out fizz
+//         else if(i % 3 === 0){
+//             console.log('fizz')
+//         // if i is divisible by 5 only then it will print out buzz
+//         }else if(i % 5 === 0){
+//             console.log('buzz')
+//         }
+//         // if none of the conditions are met just print out i 
+//         else{
+//             console.log(i)
+//         }
+//     }
+// }
+
+// console.log(fizzBuzz(21))
+
+// const heroes = ['A-train', 'Maeve', 'Homelander', 'The-Deep', 'Black Noir']
+
+function superpowers(hero){
+    const aHero = hero.toLowerCase()
+    if(aHero === 'a-train'){
+        return 'He has super speed'
+    } else if(aHero === 'maeve'){
+        return 'She has super strength'
+    } else if(aHero === 'homelander'){
+        return 'He got super strength, flight, and laser beams'
+    } else if(aHero === 'the-deep'){
+        return 'He talks to fish'
+    } else if(aHero === 'black noir'){
+        return 'To be honest we don`t know'
+    } else{
+        return 'We don`t have information on that hero'
     }
 }
 
-console.log(fizzBuzz(21))
+console.log(superpowers('Hello'))
