@@ -60,15 +60,21 @@
 
 
 function fizzBuzz(num){
+    // in this for loop we are starting at 1 and will 
+    //continue until we are less than or equal to num; and we will increment i by 1
     for(let i = 1; i <= num; i++){
+        //if i is a divividen of 3 and 5 then it will print out fizzbuzz
         if( i % 3 === 0 && i % 5 === 0){
             console.log('fizzBuzz')
         }
+        // if i is divisible by 3 only then it will print out fizz
         else if(i % 3 === 0){
             console.log('fizz')
+        // if i is divisible by 5 only then it will print out buzz
         }else if(i % 5 === 0){
             console.log('buzz')
         }
+        // if none of the conditions are met just print out i 
         else{
             console.log(i)
         }
